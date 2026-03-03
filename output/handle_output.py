@@ -24,7 +24,7 @@ def output_loop(mrna_sequence_list, dna_sequence_list):
         choice = input("Enter your choice (1, 2, or 3): ")
         
         if choice == '1':
-            print("Enter a number 1 through " + str(len(dna_sequence_list)) + " to display a specific DNA sequence, or press Enter to display all DNA sequences.")
+            print(f"Enter a number 1 through {len(dna_sequence_list)} to display a specific DNA sequence, or press Enter to display all DNA sequences.")
             user_input = input("Your choice: ")
             if user_input == "":
                 output_dna_sequences(dna_sequence_list)
@@ -39,7 +39,7 @@ def output_loop(mrna_sequence_list, dna_sequence_list):
                     print("Invalid input. Please enter a valid number.")
 
         elif choice == '2':
-            print("Enter a number 1 through " + str(len(mrna_sequence_list)) + " to display a specific mRNA sequence, or press Enter to display all mRNA sequences.")
+            print(f"Enter a number 1 through {len(mrna_sequence_list)} to display a specific mRNA sequence, or press Enter to display all mRNA sequences.")
             user_input = input("Your choice: ")
             if user_input == "":
                 output_mrna_sequences(mrna_sequence_list)
