@@ -37,4 +37,9 @@ You can import individual functions in your own scripts or tests to expand the f
 - The program is case-sensitive (expects lowercase bases)
 - There is minimal error handling
 
+## TODO: 
+- Support saving specific sequences to file
+- Support uppercase bases
+- Improve error handling
+
 Feel free to fork or modify this utility.
