@@ -35,6 +35,7 @@ def translate_codons_to_amino_acids(codon_lists):
         'aau': 'N', 'aac': 'N', 'aaa': 'K', 'aag': 'K',
         'gau': 'D', 'gac': 'D', 'gaa': 'E', 'gag': 'E',
         'ugu': 'C', 'ugc': 'C', 'uga': '*', 'ugg': 'W',
+        'cgu': 'R', 'cgc': 'R', 'cga': 'R', 'cgg': 'R',
         'agu': 'S', 'agc': 'S', 'aga': 'R', 'agg': 'R',
         'ggu': 'G', 'ggc': 'G', 'gga': 'G', 'ggg': 'G'
     }
