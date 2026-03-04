@@ -13,8 +13,25 @@ def output_dna_sequences(dna_sequence_list):
     for index, dna in enumerate(dna_sequence_list, start=1):
         print(f"{index}. {dna}")
 
+def output_mrna_sequences_to_file(mrna_sequence_list, filename="mrna_sequences.txt"):
+    """Writes the list of mRNA sequences to a text file."""
+    with open(filename, "w") as f:
+        f.write("Transcribed mRNA Sequences:\n")
+        for index, mrna in enumerate(mrna_sequence_list, start=1):
+            f.write(f"{index}. {mrna}\n")
+
+def output_dna_sequences_to_file(dna_sequence_list, filename="dna_sequences.txt"):
+    """Writes the list of DNA sequences to a text file."""
+    with open(filename, "w") as f:
+        f.write("Parsed DNA Sequences:\n")
+        for index, dna in enumerate(dna_sequence_list, start=1):
+            f.write(f"{index}. {dna}\n")
+
 def output_loop(mrna_sequence_list, dna_sequence_list):
     """Main loop to handle output of DNA and mRNA sequences."""
+    output_mrna_sequences_to_file(mrna_sequence_list)
+    output_dna_sequences_to_file(dna_sequence_list)
+    
     while True:
         print("\nChoose an option:")
         print("1. Display DNA sequences")

@@ -15,7 +15,7 @@ Modular design with each specific module having a single responsibility:
 
 1. Parsing: handles cleaning input from the FASTA-style text files
 2. Transcription: swaps every thymine (\`t\`) with uracil (\`u\`)
-3. Output: handles output formatting and display
+3. Output: handles output formatting and display, outputs parsed sequences into working directory
 
 ## Running
 1. Clone the repo
